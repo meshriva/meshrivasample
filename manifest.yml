@@ -1,0 +1,8 @@
+  host: smartpoolweb
+  disk: 512M
+  name: smartpoolweb
+  command: node app.js
+  path: .
+  domain: mybluemix.net
+  memory: 128M
+  instances: 1

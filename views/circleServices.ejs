@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Basic front service page for the site" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="/images/login/favicon.png">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>Smart Car Pool</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="stylesheets/services/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="stylesheets/services/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="stylesheets/services/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body >
+
+<div class="navbar navbar-inverse navbar-fixed-top" >
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Smart Car Pool</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="#">Logged in
+                        <% if(user) { %>  as <%=user.email%>  <% } %>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/services">HOME</a></li>
+                <li><a href="/searchTrips">FIND TRIPS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="/logout">LOGOUT</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--/.NAVBAR END-->
+
+<section id="home" class="head-main-img">
+
+    <div class="container">
+        <div class="row text-center pad-row" >
+            <div class="col-md-12">
+                <h1>  CIRCLE SERVICES  </h1>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--/.HEADING END-->
+
+<section >
+    <div class="container">
+        <div class="row text-center pad-row">
+            <div class="col-md-4  col-sm-4">
+                <i class="fa fa-search fa-5x"></i>
+                <h4> <strong>Search Circles</strong> </h4>
+                <p>
+                    Search groups based on your preference and apply for them.
+
+                </p>
+                <a href="/manageCirclesSearch" class="btn btn-primary" >Start Here</a>
+            </div>
+
+            <div class="col-md-4  col-sm-4">
+                <i class="fa fa-edit  fa-5x"></i>
+                <h4> <strong>View your Circles</strong> </h4>
+                <p>
+                    View your current circles which you have created,manage them here
+                </p>
+                <a href="/manageCirclesCurrent" class="btn btn-primary" >More Details</a>
+            </div>
+
+
+        </div>
+        <div class="row text-center pad-row">
+
+            <div class="col-md-4  col-sm-4">
+                <i class="fa fa-database fa-5x"></i>
+                <h4> <strong>Create a new circle</strong> </h4>
+                <p>
+                    Want to be the change and start a new group, click here
+                </p>
+                <a href="/manageCirclesCreate" class="btn btn-primary" >More Details</a>
+            </div>
+            <div class="col-md-4  col-sm-4">
+                <i class="fa fa-circle-thin  fa-5x"></i>
+                <h4> <strong>Allow users</strong> </h4>
+                <p>
+                    Users want to join your circle.Don't make them wait.Add them in your circle
+                </p>
+                <a href="/manageCirclesPermission" class="btn btn-primary" >More Details</a>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<section  class="note-sec" >
+
+    <div class="container">
+        <div class="row text-center pad-row" >
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
+                <i class="fa fa-quote-left fa-3x"></i>
+                <p>
+                    We see our customers as invited guests to a party,
+                    and we are the hosts. It's our job to make the customer experience a little bit better.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--/.NOTE END-->
+<section id="clients"  >
+
+
+    <div class="container">
+        <div class="row text-center pad-bottom" >
+            <div class="col-md-12">
+                <h4> <strong>See what our cusotmer's say about us :</strong> </h4>
+                <blockquote>
+                    <p>Works like a charm never had a problem.I would recommend this to every one</p>
+                    <small>Frodo<cite title="Source Title">Baggins</cite></small>
+                </blockquote>
+
+                <blockquote class="pull-right">
+                    <p>Thumps for the site ,works smoothly.Good job guys</p>
+                    <small>Andrea<cite title="Source Title"> Millkoff</cite></small>
+                </blockquote>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--/.CLIENTS END-->
+<section id="footer-sec" >
+
+    <div class="container">
+        <div class="row  pad-bottom" >
+            <div class="col-md-4">
+                <h4> <strong>ABOUT US</strong> </h4>
+                <p>
+                    We are committed to provide services which can translate our world into
+                    an smarter world.
+                </p>
+                <a href="#" >read more</a>
+            </div>
+            <div class="col-md-4">
+                <h4> <strong>SOCIAL LINKS</strong> </h4>
+                <p>
+                    <a href="#"><i class="fa fa-facebook-square fa-3x"  ></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-3x"  ></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square fa-3x"  ></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-3x"  ></i></a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4> <strong>OUR LOCATION</strong> </h4>
+                <p>
+                    Divyasree NSL Tech Park, <br />
+                    Hitech City <br />
+                    Hyderabad,India
+                </p>
+                <a href="#" class="btn btn-primary" >SEND QUERY</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/.FOOTER END-->
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY  -->
+<script src="/javascripts/services/plugins/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="/javascripts/services/plugins/bootstrap.js"></script>
+<!-- CUSTOM SCRIPTS  -->
+<script src="/javascripts/services/custom.js"></script>
+</body>
+</html>
